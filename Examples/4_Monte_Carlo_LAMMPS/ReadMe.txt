@@ -6,7 +6,7 @@ NOTE: the location of the LAMMPS executable must be saved in the $PATH environme
 variable with the name LMPPATH.
 
 -Minimization is done with the conjugate gradient algorithm as implemented in LAMMPS with a
-relative energy tolerance of 1e-5.
+force tolerance of 1e-3 by default.
 
 -The Monte Carlo simulations consist of successive Metropolis trial steps, which correspond to
 swapping the positions of two different atoms and accepting the move with a probability.
