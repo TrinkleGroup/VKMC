@@ -57,7 +57,7 @@ python -u $ML_RUN/GCNetRun.py -DP $DP -cr $CP -a0 1.0 -m train -scr -nl 6 -nch 8
 
 # The following command will train the networks from from 500 to 1000 epochs (-scr disabled, -sep 500, -eep 1000) by loading the network saved at the 500th epoch
 # in the previous run.
-python -u $ML_RUN/GCNetRun.py -DP $DP -cr $CP -a0 1.0 -m train -scr -nl 6 -nch 8 -ncL 1 -td $c -tn $c -sep 500 -eep 1000 -i 10 -sp 1 -vSp 2 -bs 128
+python -u $ML_RUN/GCNetRun.py -DP $DP -cr $CP -a0 1.0 -m train -nl 6 -nch 8 -ncL 1 -td $c -tn $c -sep 500 -eep 1000 -i 10 -sp 1 -vSp 2 -bs 128
 
 # 2. EVALUATION
 # The follwowing will evaluate the saved networks from 0 to 1000 epochs in intervals of 10 epochs, with a batch size of 1024.
