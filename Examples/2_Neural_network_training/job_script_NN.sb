@@ -27,9 +27,9 @@ c=80
 VKMC=/path/to/local/copy/of/VKMC/repository/
 CP=$VKMC/CrysDat_FCC/CrystData.h5
 
-$DP=/full/path/to/dataset/file # example: /FullPathToMyDataSetDirectory/singleStep_FCC_SR2_c0_${c}.h5
+DP=/full/path/to/dataset/file # example: /FullPathToMyDataSetDirectory/singleStep_FCC_SR2_c0_${c}.h5
 
-$ML_RUN=$VKMC/Symm_Network/
+ML_RUN=$VKMC/Symm_Network/
 
 # 1. TRAINING
 
