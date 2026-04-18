@@ -27,7 +27,7 @@ c=80
 VKMC=/path/to/local/copy/of/VKMC/repository/
 CP=$VKMC/CrysDat_FCC/CrystData.h5
 
-$DataSets=/full/path/to/dataset/file # example: /FullPathToMyDataSetDirectory/singleStep_FCC_SR2_c0_${c}.h5
+$DP=/full/path/to/dataset/file # example: /FullPathToMyDataSetDirectory/singleStep_FCC_SR2_c0_${c}.h5
 
 $ML_RUN=$VKMC/Symm_Network/
 
@@ -53,7 +53,7 @@ python -u $ML_RUN/GCNetRun.py -DP $DP -cr $CP -a0 1.0 -m train -scr -nl 6 -nch 8
 # We will save and evaluate networks every 10 epochs, so we set -i to 10.
 # We will use batch size of 128 for training, so we set -bs to 128.
 
-# We initialize the network's weights and biases from a normal distribution with mean 0.002 (-wm option) and standard deviation 0.02 (-ws option)
+# We initialize the network's weights and biases from a normal distribution with mean 0.02 (-wm option) and standard deviation 0.02 (-ws option)
 
 # The following command will train the networks from from 500 to 1000 epochs (-scr disabled, -sep 500, -eep 1000) by loading the network saved at the 500th epoch
 # in the previous run.
