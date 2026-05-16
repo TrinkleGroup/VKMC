@@ -183,7 +183,7 @@ class test_Vector_Cluster_Expansion(unittest.TestCase):
                 self.assertGreater(count, 0)
 
                 # Now check invariance of basis vectors
-                count += 1
+                count = 0
                 for g in self.crys.G:
                     if cl0.g(self.crys, g) == cl0:
                         count += 1
